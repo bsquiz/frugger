@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<title>Frugger</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="main.css" />
+	</head>
+
+	<body>
+		<div id="menu" class="text-center text-lg p-s">
+			<img class="mt-sm" src="img/logo.png" />
+			<div class="d-none" id="gameWin">Win</div>
+			<div class="d-none" id="gameLose">Lose</div>
+			<div id="gameInstructions">
+				<h2>how to play</h2>
+				<ul class="p-0">
+					<li>Move Frugger with arrow keys</li>
+					<li>Avoid hazards</li>
+					<li>Move Frugger to goal</li>
+				</ul>
+			</div>
+			<div id="gameStartButton" class="button text-lg">start</div>
+		</div>
+
+		<canvas id="canvas" class="d-block"></canvas>
+
+		<div id="directionButtons" class="d-grid d-none">
+<button id="rightButton">right</button>
+<button id="leftButton">left</button>
+<button id="upButton">up</button>
+<button id="downButton">down</button>
+		</div>
+
+		<script src="Tile.js"></script>
+		<script src="Timer.js"></script>
+
+		<script src="utilities/game.js"></script>
+		<script src="utilities/graphics.js"></script>
+
+		<script src="game.js"></script>
+		<script src="audio/audio.js"></script>
+
+		<script src="display/gameDisplay.js"></script>
+		<script src="display/hud.js"></script>
+
+		<script src="input/input.js"></script>
+		<script src="input/InputMethod.js"></script>
+		<script src="input/Keyboard.js"></script>
+		<script src="input/Gamepad.js"></script>
+		<script src="input/Touch.js"></script>
+
+		<script src="objects/HitBox.js"></script>
+		<script src="objects/GameObject.js"></script>
+		<script src="objects/Player.js"></script>
+		<script src="objects/Fly.js"></script>
+		<script src="objects/Log.js"></script>
+		<script src="objects/Turtle.js"></script>
+		<script src="objects/Car.js"></script>
+		<script src="objects/Bulldozer.js"></script>
+		<script src="objects/Truck.js"></script>
+
+		<script>
+			game.init();
+			game.update();
+		</script>
+	</body>
+</html>
